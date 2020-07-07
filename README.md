@@ -39,4 +39,5 @@ deduping etc
 
 #### TODO
 
-set FS descriptions in yaml
+- [ ] set FS descriptions in yaml
+- [ ] eventually this project is for maintaining a record of all work
