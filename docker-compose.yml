@@ -1,0 +1,11 @@
+version: "3.2"
+services:
+  server:
+    image: restic/rest-server
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ./backups
+        target: /data
+
