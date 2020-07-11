@@ -1,0 +1,28 @@
+version: "3.2"
+services:
+  server:
+    image: restic/rest-server
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ./tmp
+        target: /data
+
+  init:
+    build: .
+    command: init
+
+  backup:
+    build: .
+    command: backup /work --tag test
+
+  snapshots:
+    build: .
+    command: snapshots --json
+
+  find:
+    build: .
+    command: find * --json
+
+
