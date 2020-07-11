@@ -1,5 +1,7 @@
 # Tape
 
+![release](https://github.com/arthur-stace/tape/workflows/release/badge.svg)
+
 this is a really buggy script for creating disk partitions to facilitate
 disaster recovery
 
