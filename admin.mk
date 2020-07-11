@@ -20,5 +20,8 @@ erase:
 partition: $(MACOS) $(UBUNTU) $(RESTIC)
 	DISKUTIL partitionDisk $(DRIVE) GPT $?
 
+.PHONY: $(NAME)
+user: $(NAME)
+	docker exec -it tape_server_1 create_user $?
 
-	
+
