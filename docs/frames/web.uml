@@ -1,0 +1,7 @@
+@startuml
+frame "web" {
+  interface "bookmarks"
+  interface "jekyll:ui"
+}
+@enduml
+
