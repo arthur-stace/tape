@@ -41,3 +41,11 @@ deduping etc
 
 - [ ] set FS descriptions in yaml
 - [ ] eventually this project is for maintaining a record of all work
+![docs/actors](./docs/actors/user.png)
+![docs/clouds](./docs/clouds/3rd-party.png)
+![docs/components](./docs/components/radical.png)
+![docs/components](./docs/components/yaaa.png)
+![docs/files](./docs/files/docker-compose.png)
+![docs/frames](./docs/frames/web.png)
+![docs/nodes](./docs/nodes/api.png)
+![docs/stacks](./docs/stacks/build.png)
