@@ -55,23 +55,6 @@ package "jekyll" {
 }
 
 
-package "radical" {
-  file "Makefile:r"
-  component "radicale:latest-" {
-    card "$PASSWORD"
-    card "$VOLUME"
-    interface "make"
-  }
-
-  artifact "config" {
-    file ".restic"
-    file ".Radicale.props"
-  }
-}
-
-
-
-
 
 cloud "3rd Party" {
   usecase "Trello"
