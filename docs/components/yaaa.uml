@@ -17,7 +17,7 @@ component "yaaa" {
 
 
 Makefile ~~ DOMAIN
-DOMAIN ~~ www
+http ~~ www
 
 @enduml
 
