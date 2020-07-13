@@ -1,63 +1,6 @@
 @startuml
-actor "User"
-
-frame "web" {
-  interface "bookmarks"
-  interface "jekyll:ui"
-}
-
-file "docker-compose.yml" {
-  artifact "radical:tag"
-  artifact "cursed:tag"
-  artifact "tape:tag"
-}
-
-node "API" {
-  interface "https"
-  control "JWT"
-  artifact "nginx:running"
-}
 
 
 
-stack "build requirements" {
-
-package "cursed" {
-  file "Makefile:cursed" {
-    interface "envsubst"
-  }
-  file "config.tmpl"
-}
-
-
-package "tape" {
-  folder "/radical"
-  file "tape.cert"
-  interface "restic"
-  interface "caldav"
-}
-
-package "inventory:latest" {
-  file "Makefile" {
-    interface "yq"
-  }
-  file "inventory.yml"
-}
-
-package "nginx" {
-  file "/etc/nginx/config"
-}
-
-
-package "jekyll" {
-  file ".js"
-}
-}
-
-
-
-cloud "3rd Party" {
-  usecase "Trello"
-}
 
 @enduml
