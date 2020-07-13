@@ -1,0 +1,23 @@
+@startuml
+component "yaaa" {
+  cloud "www"
+
+  interface "make"
+
+  artifact "calendar" {
+    file "todo"
+    folder "notes"
+  }
+
+  package "container" {
+    card "DOMAIN"
+    file "Makefile"
+  }
+}
+
+
+Makefile ~~ DOMAIN
+DOMAIN ~~ www
+
+@enduml
+
