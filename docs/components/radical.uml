@@ -1,0 +1,17 @@
+@startuml
+package "radical" {
+  interface make
+
+  artifact "config" {
+    file ".restic"
+    file ".Radicale.props"
+  }
+
+  package "container" {
+    card "PASSWORD"
+    file Makefile
+  }
+}
+
+make ~~ config
+@enduml
