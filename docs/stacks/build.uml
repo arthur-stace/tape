@@ -1,0 +1,10 @@
+@startuml
+stack "build requirements" {
+  package "cursed" {
+    file "Makefile:cursed" {
+      interface "envsubst"
+    }
+    file "config.tmpl"
+  }
+}
+@enduml

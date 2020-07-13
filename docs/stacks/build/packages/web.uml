@@ -1,0 +1,8 @@
+@startuml
+stack "build"
+  package "jekyll" {
+    file config.yml
+    file ".js"
+  }
+}
+@enduml

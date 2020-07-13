@@ -1,0 +1,9 @@
+@startuml
+stack "build" {
+package "tape" {
+  folder "/radical"
+  file "tape.cert"
+  interface "restic"
+  interface "caldav"
+}
+@enduml

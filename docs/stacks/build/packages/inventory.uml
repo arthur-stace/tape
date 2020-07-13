@@ -1,0 +1,8 @@
+@startuml
+package "inventory:latest" {
+  file "Makefile" {
+    interface "yq"
+  }
+  file "inventory.yml"
+}
+@enduml

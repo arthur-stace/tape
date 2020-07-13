@@ -1,0 +1,7 @@
+@startuml
+stack "build" {
+  package "nginx" {
+    file "/etc/nginx/config"
+  }
+}
+@enduml
