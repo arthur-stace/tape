@@ -1,0 +1,8 @@
+@startuml
+file "docker-compose.yml" {
+  artifact "radical:tag"
+  artifact "cursed:tag"
+  artifact "tape:tag"
+}
+@enduml
+
