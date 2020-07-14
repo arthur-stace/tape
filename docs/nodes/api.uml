@@ -1,8 +1,0 @@
-@startuml
-node "API" {
-  interface "https"
-  control "JWT"
-  artifact "nginx:running"
-}
-@enduml
-
