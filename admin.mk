@@ -1,11 +1,11 @@
 
 DISKUTIL = $(shell which diskutil)
 
-MACOS = HFS+ macos 12.5g
+MACOS = HFS+ macos 14g
 
-UBUNTU = EXFAT ubuntu 24g
+UBUNTU = EXFAT restic 5g
 
-RESTIC = APFS restic R
+RESTIC = APFS workspace R
 
 default: unmount erase partition
 
